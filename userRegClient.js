@@ -24,3 +24,9 @@ if (userReg.checkMobNumber(mobNo))
 	console.log("Valid mobile number");	
 else
 	console.log("Invalid mobile number");
+
+var password = readlineSync.question('Enter the password : ');
+if (userReg.checkPassword(password))
+	console.log("Valid password");	
+else
+	console.log("Invalid password");

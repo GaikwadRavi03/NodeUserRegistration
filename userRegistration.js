@@ -19,5 +19,10 @@ class userRegistration{
 	let pat = RegExp('^[0-9]{2}\\s[0-9]{10}$');
 	return pat.test(mobNo);
 	}
+
+	checkPassword(password){
+	let pat = RegExp('^[a-zA-Z]{8,}$');
+	return pat.test(password);
+	}
 }
 module.exports = new userRegistration;
