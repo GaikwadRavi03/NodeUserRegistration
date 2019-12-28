@@ -21,7 +21,7 @@ class userRegistration{
 	}
 
 	checkPassword(password){
-	let pat = RegExp('[a-zA-Z]*[A-Z]+[a-zA-Z]*$');
+	let pat = RegExp('((?=.*[0-9])(?=.*[a-z]?)(?=.*[A-Z])(?=.*[@#*$%]).{8,})');
 	return pat.test(password);
 	}
 }
